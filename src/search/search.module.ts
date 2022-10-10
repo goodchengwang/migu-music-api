@@ -2,7 +2,6 @@ import { HttpModule } from '@nestjs/axios'
 import { Module } from '@nestjs/common'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { SearchController } from './search.controller'
-import { SearchService } from './search.service'
 
 @Module({
   imports: [
@@ -18,7 +17,6 @@ import { SearchService } from './search.service'
       inject: [ConfigService]
     })
   ],
-  controllers: [SearchController],
-  providers: [SearchService]
+  controllers: [SearchController]
 })
 export class SearchModule {}
