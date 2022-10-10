@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { SearchModule } from './search/search.module'
 import { PlaylistModule } from './playlist/playlist.module'
+import { SongModule } from './song/song.module'
 import httpConfig from './config/http-config'
 
 @Module({
@@ -11,7 +12,8 @@ import httpConfig from './config/http-config'
       load: [httpConfig]
     }),
     SearchModule,
-    PlaylistModule
+    PlaylistModule,
+    SongModule
   ],
   controllers: [],
   providers: []
