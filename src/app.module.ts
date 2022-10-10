@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { SearchModule } from './un-auth/search/search.module'
+import { PlaylistModule } from './un-auth/playlist/playlist.module'
 import httpConfig from './config/http-config'
 
 @Module({
@@ -9,7 +10,8 @@ import httpConfig from './config/http-config'
       isGlobal: true,
       load: [httpConfig]
     }),
-    SearchModule
+    SearchModule,
+    PlaylistModule
   ],
   controllers: [],
   providers: []
