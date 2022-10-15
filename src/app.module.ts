@@ -7,6 +7,7 @@ import { AlbumModule } from './album/album.module'
 import { MvModule } from './mv/mv.module'
 import { BillboardModule } from './billboard/billboard.module'
 import { NewModule } from './new/new.module'
+import { AuthModule } from './auth/auth.module'
 import httpConfig from './config/http-config'
 
 @Module({
@@ -21,7 +22,8 @@ import httpConfig from './config/http-config'
     AlbumModule,
     MvModule,
     BillboardModule,
-    NewModule
+    NewModule,
+    AuthModule
   ],
   controllers: [],
   providers: []
