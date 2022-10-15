@@ -1,6 +1,5 @@
 import { HttpService } from '@nestjs/axios'
-import { Controller, Get, Query, Req } from '@nestjs/common'
-import { Request } from 'express'
+import { Controller, Get, Query } from '@nestjs/common'
 import { map } from 'rxjs'
 
 @Controller('mv')

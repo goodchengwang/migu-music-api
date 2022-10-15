@@ -5,6 +5,7 @@ import { PlaylistModule } from './playlist/playlist.module'
 import { SongModule } from './song/song.module'
 import { AlbumModule } from './album/album.module'
 import { MvModule } from './mv/mv.module'
+import { BillboardModule } from './billboard/billboard.module'
 import httpConfig from './config/http-config'
 
 @Module({
@@ -17,7 +18,8 @@ import httpConfig from './config/http-config'
     PlaylistModule,
     SongModule,
     AlbumModule,
-    MvModule
+    MvModule,
+    BillboardModule
   ],
   controllers: [],
   providers: []
